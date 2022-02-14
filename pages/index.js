@@ -487,6 +487,12 @@ export default function Home() {
             }}
             >
             <Piano
+              playNote={(midiNumber) => {
+                // Play a given note - see notes below
+              }}
+              stopNote={(midiNumber) => {
+                // Stop playing a given note - see notes below
+              }}
               noteRange={{ first: firstNote, last: lastNote }}
               keyboardShortcuts={highlightPianoKey}
               renderNoteLabel={({ keyboardShortcut}) =>
