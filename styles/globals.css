@@ -1,16 +1,20 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.diamond,
+.dia {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+.diamond {
+  transform: rotate(45deg) translateY(-0px) translateX(-0px);
 }
-
-* {
-  box-sizing: border-box;
+.diamond .dia {
+  width: 254px;
+  height: 254px;
+  transform: rotate(-45deg);
+}
+.diamond img {
+  width: 100%;
+  height: auto;
 }
